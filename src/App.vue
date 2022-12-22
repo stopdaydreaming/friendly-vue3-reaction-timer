@@ -18,11 +18,8 @@ export default {
   },
   methods: {
     start() {
-      this.delay = setTimeout(() => {
-        this.isPlaying = true;
-      }, Math.random() * 5000 + 2000);
+      this.delay = 2000 + Math.random() * 5000;
       this.isPlaying = true;
-      console.log(this.delay);
     }
   }
 }
